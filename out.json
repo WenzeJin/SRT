@@ -17,7 +17,7 @@
             "while (apr_isspace(*first)) {",
             "++first;                /*   and the space(s)   */"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -38,7 +38,7 @@
             "&& apr_isdigit(pro[7])) {",
             "r->proto_num = HTTP_VERSION(pro[5] - '0', pro[7] - '0');"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -59,7 +59,7 @@
             "while (apr_isspace(*l)) {",
             "++l;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -80,7 +80,7 @@
             "while (*ptr == ',' || apr_isspace(*ptr))",
             "++ptr;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -101,7 +101,7 @@
             "while (*ptr == ',' || apr_isspace(*ptr)) {",
             "++ptr;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -122,7 +122,7 @@
             "while (*ptr == ',' || apr_isspace(*ptr))",
             "++ptr;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -143,7 +143,7 @@
             "while (apr_isspace(*start))",
             "++start;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -180,7 +180,7 @@
             "while (--end >= start && apr_isspace(*end))",
             "*end = '\\0';"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -201,7 +201,7 @@
             "while (apr_isspace(*strend))",
             "++strend;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -223,7 +223,7 @@
             "my_info = (proc_info *) ap_malloc(sizeof(proc_info));",
             "my_info->pid = my_child_num;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -284,7 +284,7 @@
             "ovector = (int *)malloc(sizeof(int) * nmatch * 3);",
             "if (ovector == NULL)"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -306,7 +306,7 @@
             "while (*ptr && (accept_white || !apr_isspace(*ptr))",
             "&& *ptr != ';' && *ptr != ',') {"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -342,7 +342,7 @@
             "while (*first && !apr_isspace(*first)) {",
             "++first;                /* skip over the method */"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -363,7 +363,7 @@
             "if (apr_isalnum(c)) {",
             "*cp++ = apr_toupper(c);"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -384,7 +384,7 @@
             "if (apr_isdigit(*whack)) {",
             "*whack++ = '_';"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -517,7 +517,7 @@
             "yymsg = (char *) YYSTACK_ALLOC (yymsg_alloc);",
             "if (!yymsg)"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -539,7 +539,7 @@
             "ap_log_error(APLOG_MARK, APLOG_WARNING, errno, s, APLOGNO(00062) \"sigaction(SIGBUS)\");",
             "#endif"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -560,7 +560,7 @@
             "if (apr_islower(*dst)) {",
             "/* leave char unchanged */"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -613,7 +613,7 @@
             "threads = ap_calloc(threads_per_child, sizeof(apr_thread_t *));",
             "ts = apr_palloc(pchild, sizeof(*ts));"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -635,7 +635,7 @@
             "ap_log_error(APLOG_MARK, APLOG_WARNING, errno, ap_server_conf, APLOGNO(00465)",
             "\"sigaction(SIGHUP)\");"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -656,7 +656,7 @@
             "else if (apr_isupper(*dst)) {",
             "*dst = apr_tolower(*dst);"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -678,7 +678,7 @@
             "ap_log_error(APLOG_MARK, APLOG_WARNING, errno, ap_server_conf, APLOGNO(00461)",
             "\"sigaction(SIGINT)\");"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -699,7 +699,7 @@
             "return errno;",
             "}"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -720,7 +720,7 @@
             "if (c != '\\t' && apr_iscntrl(c)) {",
             "return APR_EINVAL;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -741,7 +741,7 @@
             "if (!apr_isalnum(pattern[0])) {",
             "delim = *str++;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -763,7 +763,7 @@
             "errno = oerrno;",
             "}"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -785,7 +785,7 @@
             "if (bytes_read == 0 || bytes_read == BUFFER_SIZE - 1 || !apr_isdigit(*buf)) {",
             "return APR_EGENERAL;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -808,7 +808,7 @@
             "b = (YY_BUFFER_STATE) ap_expr_yyalloc(sizeof( struct yy_buffer_state ) ,yyscanner );",
             "if ( ! b )"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -830,7 +830,7 @@
             "if (value < 0 || errno == ERANGE)",
             "return apr_pstrcat(cmd->pool, \"Invalid MaxMemFree value: \","
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -851,7 +851,7 @@
             "if (!apr_isprint(*src))",
             "*dest = 'x';"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -872,7 +872,7 @@
             "&& pro[4] == '/' && apr_isdigit(pro[5]) && pro[6] == '.'",
             "&& apr_isdigit(pro[7])) {"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -894,7 +894,7 @@
             "ap_log_error(APLOG_MARK, APLOG_WARNING, errno, s, APLOGNO(00064) \"sigaction(SIGABRT)\");",
             "#endif"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -915,7 +915,7 @@
             "while (apr_isspace(*ptr))",
             "++ptr;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -937,7 +937,7 @@
             "ap_log_error(APLOG_MARK, APLOG_WARNING, errno, s, APLOGNO(00066) \"sigaction(SIGFPE)\");",
             "#endif"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -958,7 +958,7 @@
             "while (*strend && !apr_isspace(*strend))",
             "++strend;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -981,7 +981,7 @@
             "buf = (char *) ap_expr_yyalloc(n ,yyscanner );",
             "if ( ! buf )"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1004,7 +1004,7 @@
             "&& (len < 4 || apr_isspace(r->status_line[3]))",
             "&& (len < 5 || apr_isalnum(r->status_line[4]))) {"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1026,7 +1026,7 @@
             "ap_log_error(APLOG_MARK, APLOG_WARNING, errno, ap_server_conf, APLOGNO(00463)",
             "\"sigaction(SIGXFSZ)\");"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1047,7 +1047,7 @@
             "else if (pattern[0] == 'm' && !apr_isalnum(pattern[1])) {",
             "delim = pattern[1];"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1068,7 +1068,7 @@
             "errno = EINVAL;",
             "return 1;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1089,7 +1089,7 @@
             "if (!apr_isxdigit(*(y + 1)) || !apr_isxdigit(*(y + 2))) {",
             "badesc = 1;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1110,7 +1110,7 @@
             "while (apr_isspace(*str))",
             "++str;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1132,7 +1132,7 @@
             "ap_log_error(APLOG_MARK, APLOG_WARNING, errno, ap_server_conf, APLOGNO(00464)",
             "\"sigaction(SIGPIPE)\");"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1153,7 +1153,7 @@
             "if (!apr_isalnum(*whack)) {",
             "#endif"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1175,7 +1175,7 @@
             "ap_log_error(APLOG_MARK, APLOG_ERR, errno, s, APLOGNO(00481)",
             "\"fork: Unable to fork new process\");"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1196,7 +1196,7 @@
             "while (*last && !apr_isspace(*last)) {",
             "++last;                 /* end at next whitespace */"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1218,7 +1218,7 @@
             "while (endp > l && apr_isspace(*endp)) {",
             "*endp-- = '\\0';"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1239,7 +1239,7 @@
             "return errno;",
             "}"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1260,7 +1260,7 @@
             "stat = apr_get_netos_error();",
             "ap_log_perror(APLOG_MARK, APLOG_CRIT, stat, p, APLOGNO(02638)"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1281,7 +1281,7 @@
             "while (apr_isspace(*trim)) {",
             "trim++;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1302,7 +1302,7 @@
             "if (errno) {",
             "return errno;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1325,7 +1325,7 @@
             "ap_log_error(APLOG_MARK, APLOG_ERR, errno, cmd->server, APLOGNO(02172)",
             "\"%s: getrlimit failed\", cmd->cmd->name);"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1347,7 +1347,7 @@
             "if (value < 0 || errno == ERANGE)",
             "return apr_pstrcat(cmd->pool, \"Invalid ThreadStackSize value: \","
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1370,7 +1370,7 @@
             "return kill(pid, sig) ? errno : APR_SUCCESS;",
             "}"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1392,7 +1392,7 @@
             "ap_log_error(APLOG_MARK, APLOG_WARNING, errno, s, APLOGNO(00061) \"sigaction(SIGSEGV)\");",
             "#ifdef SIGBUS"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1414,7 +1414,7 @@
             "if (c == '$' && apr_isdigit(*src))",
             "no = *src++ - '0';"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1435,7 +1435,7 @@
             "errno = ENOMEM;",
             "return 1;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1456,7 +1456,7 @@
             "while (apr_isdigit(*++s))",
             "i = i * 10 + (*s) - '0';"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1477,7 +1477,7 @@
             "while (*strend && !apr_isspace(*strend))",
             "++strend;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1498,7 +1498,7 @@
             "return errno;",
             "}"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1521,7 +1521,7 @@
             "&& (len < 5 || apr_isalnum(r->status_line[4]))) {",
             "/* Since we passed the above check, we know that length three"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1543,7 +1543,7 @@
             "if (!(ent = getpwnam(name))) {",
             "ap_log_error(APLOG_MARK, APLOG_STARTUP, 0, NULL, APLOGNO(00543)"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1564,7 +1564,7 @@
             "errno = 0;",
             "value = strtol(arg, NULL, 10);"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1586,7 +1586,7 @@
             "} while (written >= 0 || errno == EINTR);",
             "abort();"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1607,7 +1607,7 @@
             "if (!apr_isxdigit(c)) {",
             "/*"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1628,7 +1628,7 @@
             "ap_log_error(APLOG_MARK, APLOG_STARTUP, errno, NULL, APLOGNO(00057)",
             "\"sending signal to server\");"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1649,7 +1649,7 @@
             "while (*e == ',' || apr_isspace(*e)) {",
             "++e;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1670,7 +1670,7 @@
             "if (!apr_isxdigit(*(y + 1)) || !apr_isxdigit(*(y + 2))) {",
             "badesc = 1;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1693,7 +1693,7 @@
             "for (c = r->hostname; apr_isdigit(*c); ++c);",
             "if (!*c) {  /* pure integer */"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1715,7 +1715,7 @@
             "if (c == '$' && apr_isdigit(*src))",
             "no = *src++ - '0';"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1736,7 +1736,7 @@
             "errno = 0;",
             "value = strtol(arg, NULL, 10);"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1758,7 +1758,7 @@
             "((!apr_isalnum(u[x])) &&",
             "(u[x] != '+') && (u[x] != '-') && (u[x] != '.'))) {"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1780,7 +1780,7 @@
             "while ((semi > intype) && apr_isspace(semi[-1])) {",
             "semi--;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1802,7 +1802,7 @@
             "ap_log_error(APLOG_MARK, APLOG_WARNING, errno, s, APLOGNO(00065) \"sigaction(SIGILL)\");",
             "#endif"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1823,7 +1823,7 @@
             "while (apr_isspace(*strend))",
             "++strend;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1844,7 +1844,7 @@
             "if (apr_isprint(c)",
             "&& c != '\\\\') {  /* backslash will be escaped later, which throws"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1866,7 +1866,7 @@
             "ap_log_error(APLOG_MARK, APLOG_WARNING, errno, ap_server_conf, APLOGNO(00459)",
             "\"sigaction(SIGTERM)\");"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1887,7 +1887,7 @@
             "if (apr_isalpha(*n)) {",
             "trie_node_link(FILTER_POOL, node, child, apr_toupper(*n));"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1909,7 +1909,7 @@
             "int oerrno = errno;",
             "struct yyguts_t * yyg = (struct yyguts_t*)yyscanner;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1931,7 +1931,7 @@
             "ap_log_error(APLOG_MARK, APLOG_WARNING, errno, ap_server_conf, APLOGNO(00460)",
             "\"sigaction(\" AP_SIG_GRACEFUL_STOP_STRING \")\");"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1953,7 +1953,7 @@
             "(lidx > 0 && !(apr_isspace(line[lidx - 1]) || line[lidx - 1] == ',')))",
             "return 0;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1974,7 +1974,7 @@
             "else if (!apr_isalnum(*src))",
             "*dest = '_';"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -1996,7 +1996,7 @@
             "ap_log_error(APLOG_MARK, APLOG_WARNING, errno, ap_server_conf, APLOGNO(00462)",
             "\"sigaction(SIGXCPU)\");"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -2018,7 +2018,7 @@
             "if (!(ent = getgrnam(name))) {",
             "ap_log_error(APLOG_MARK, APLOG_STARTUP, 0, NULL, APLOGNO(00544)"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -2041,7 +2041,7 @@
             "|| (len >= 4 && ! apr_isspace(r->status_line[3]))) {",
             "r->status_line = NULL;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -2062,7 +2062,7 @@
             "while (*e != '\\0' && *e != ',' && !apr_isspace(*e)) {",
             "++e;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -2083,7 +2083,7 @@
             "while (apr_isspace(*str))",
             "++str;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -2105,7 +2105,7 @@
             "my_info = (proc_info *) ap_malloc(sizeof(proc_info));",
             "my_info->pid = my_child_num;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -2127,7 +2127,7 @@
             "ap_log_error(APLOG_MARK, APLOG_CRIT, errno, s_main, APLOGNO(00093)",
             "\"unable to replace stderr with %s\", NULL_DEVICE);"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -2148,7 +2148,7 @@
             "while (apr_isspace(*ptr))",
             "++ptr;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -2170,7 +2170,7 @@
             "ap_log_error(APLOG_MARK, APLOG_WARNING, errno, ap_server_conf, APLOGNO(00466)",
             "\"sigaction(\" AP_SIG_GRACEFUL_STRING \")\");"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -2191,7 +2191,7 @@
             "return errno;",
             "}"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     },
     {
@@ -2212,7 +2212,7 @@
             "else if (pattern[0] == 's' && !apr_isalnum(pattern[1])) {",
             "action = SUBSTITUTE;"
         ],
-        "SuccessTransform": "",
+        "SuccessTransform": "True",
         "TransformMessage": ""
     }
 ]
