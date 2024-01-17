@@ -1,0 +1,1276 @@
+[{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	358,
+		"cl":	12,
+		"fl":	"util_script.c"
+	},
+	"Function":	"original_uri",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	661,
+		"cl":	12,
+		"fl":	"protocol.c"
+	},
+	"Function":	"read_request_line",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	612,
+		"cl":	16,
+		"fl":	"util_script.c"
+	},
+	"Function":	"ap_scan_script_header_err_core_ex",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1247,
+		"cl":	27,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_size_list_item",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1380,
+		"cl":	31,
+		"fl":	"util.c"
+	},
+	"Function":	"find_list_item",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1208,
+		"cl":	27,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_size_list_item",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1127,
+		"cl":	12,
+		"fl":	"util.c"
+	},
+	"Function":	"cfg_trim_line",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	710,
+		"cl":	12,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_getword_white",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1131,
+		"cl":	30,
+		"fl":	"util.c"
+	},
+	"Function":	"cfg_trim_line",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	871,
+		"cl":	12,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_getword_conf2",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1995,
+		"cl":	29,
+		"fl":	"event.c"
+	},
+	"Function":	"create_listener_thread",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Partial Leak",
+	"Location":	{
+		"ln":	200,
+		"cl":	30,
+		"fl":	"util_pcre.c"
+	},
+	"Function":	"ap_regexec_len",
+	"Description":	{
+		"ConditionalFreePath":	[{
+				"BranchLoc":	{
+					"ln":	213,
+					"cl":	9,
+					"fl":	"util_pcre.c"
+				},
+				"BranchCond":	"False"
+			}, {
+				"BranchLoc":	{
+					"ln":	213,
+					"cl":	9,
+					"fl":	"util_pcre.c"
+				},
+				"BranchCond":	"True"
+			}, {
+				"BranchLoc":	{
+					"ln":	219,
+					"cl":	13,
+					"fl":	"util_pcre.c"
+				},
+				"BranchCond":	"True"
+			}, {
+				"BranchLoc":	{
+					"ln":	227,
+					"cl":	13,
+					"fl":	"util_pcre.c"
+				},
+				"BranchCond":	"True"
+			}]
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1620,
+		"cl":	38,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_get_token",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	703,
+		"cl":	13,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_getword_white",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	355,
+		"cl":	23,
+		"fl":	"util_script.c"
+	},
+	"Function":	"original_uri",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	69,
+		"cl":	13,
+		"fl":	"util_script.c"
+	},
+	"Function":	"http2env",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	122,
+		"cl":	13,
+		"fl":	"util_script.c"
+	},
+	"Function":	"ap_create_environment",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Partial Leak",
+	"Location":	{
+		"ln":	1954,
+		"cl":	30,
+		"fl":	"util_expr_parse.c"
+	},
+	"Function":	"ap_expr_yyparse",
+	"Description":	{
+		"ConditionalFreePath":	[{
+				"BranchLoc":	{
+					"ln":	1340,
+					"cl":	7,
+					"fl":	"util_expr_parse.c"
+				},
+				"BranchCond":	"False"
+			}, {
+				"BranchLoc":	{
+					"ln":	1403,
+					"cl":	7,
+					"fl":	"util_expr_parse.c"
+				},
+				"BranchCond":	"False"
+			}, {
+				"BranchLoc":	{
+					"ln":	1418,
+					"cl":	7,
+					"fl":	"util_expr_parse.c"
+				},
+				"BranchCond":	"True"
+			}, {
+				"BranchLoc":	{
+					"ln":	1477,
+					"cl":	7,
+					"fl":	"util_expr_parse.c"
+				},
+				"BranchCond":	"True"
+			}, {
+				"BranchLoc":	{
+					"ln":	1933,
+					"cl":	13,
+					"fl":	"util_expr_parse.c"
+				},
+				"BranchCond":	"True"
+			}, {
+				"BranchLoc":	{
+					"ln":	1936,
+					"cl":	7,
+					"fl":	"util_expr_parse.c"
+				},
+				"BranchCond":	"False"
+			}, {
+				"BranchLoc":	{
+					"ln":	1936,
+					"cl":	7,
+					"fl":	"util_expr_parse.c"
+				},
+				"BranchCond":	"True"
+			}, {
+				"BranchLoc":	{
+					"ln":	1948,
+					"cl":	13,
+					"fl":	"util_expr_parse.c"
+				},
+				"BranchCond":	"False"
+			}, {
+				"BranchLoc":	{
+					"ln":	1950,
+					"cl":	18,
+					"fl":	"util_expr_parse.c"
+				},
+				"BranchCond":	"True"
+			}, {
+				"BranchLoc":	{
+					"ln":	1952,
+					"cl":	17,
+					"fl":	"util_expr_parse.c"
+				},
+				"BranchCond":	"True"
+			}, {
+				"BranchLoc":	{
+					"ln":	1968,
+					"cl":	13,
+					"fl":	"util_expr_parse.c"
+				},
+				"BranchCond":	"False"
+			}, {
+				"BranchLoc":	{
+					"ln":	2111,
+					"cl":	7,
+					"fl":	"util_expr_parse.c"
+				},
+				"BranchCond":	"True"
+			}]
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1019,
+		"cl":	9,
+		"fl":	"mpm_unix.c"
+	},
+	"Function":	"ap_fatal_signal_setup",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	744,
+		"cl":	17,
+		"fl":	"vhost.c"
+	},
+	"Function":	"fix_hostname",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Partial Leak",
+	"Location":	{
+		"ln":	2298,
+		"cl":	15,
+		"fl":	"event.c"
+	},
+	"Function":	"child_main",
+	"Description":	{
+		"ConditionalFreePath":	[{
+				"BranchLoc":	{
+					"ln":	2322,
+					"cl":	9,
+					"fl":	"event.c"
+				},
+				"BranchCond":	"False"
+			}, {
+				"BranchLoc":	{
+					"ln":	2333,
+					"cl":	9,
+					"fl":	"event.c"
+				},
+				"BranchCond":	"False"
+			}, {
+				"BranchLoc":	{
+					"ln":	2333,
+					"cl":	9,
+					"fl":	"event.c"
+				},
+				"BranchCond":	"True"
+			}]
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	774,
+		"cl":	9,
+		"fl":	"event.c"
+	},
+	"Function":	"set_signals",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	752,
+		"cl":	22,
+		"fl":	"vhost.c"
+	},
+	"Function":	"fix_hostname",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	743,
+		"cl":	9,
+		"fl":	"event.c"
+	},
+	"Function":	"set_signals",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	252,
+		"cl":	24,
+		"fl":	"unixd.c"
+	},
+	"Function":	"ap_unixd_set_proc_mutex_perms",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	206,
+		"cl":	30,
+		"fl":	"http_filters.c"
+	},
+	"Function":	"parse_chunk_size",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	50,
+		"cl":	10,
+		"fl":	"util_regex.c"
+	},
+	"Function":	"ap_rxplus_compile",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	2071,
+		"cl":	2,
+		"fl":	"util_expr_scan.c"
+	},
+	"Function":	"ap_expr_yy_init_buffer",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1655,
+		"cl":	62,
+		"fl":	"log.c"
+	},
+	"Function":	"ap_read_pid",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	2219,
+		"cl":	24,
+		"fl":	"util_expr_scan.c"
+	},
+	"Function":	"ap_expr_yy_scan_buffer",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	386,
+		"cl":	22,
+		"fl":	"mpm_common.c"
+	},
+	"Function":	"ap_mpm_set_max_mem_free",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	2558,
+		"cl":	14,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_str2_alnum",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	660,
+		"cl":	29,
+		"fl":	"protocol.c"
+	},
+	"Function":	"read_request_line",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1027,
+		"cl":	9,
+		"fl":	"mpm_unix.c"
+	},
+	"Function":	"ap_fatal_signal_setup",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1611,
+		"cl":	12,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_get_token",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1035,
+		"cl":	9,
+		"fl":	"mpm_unix.c"
+	},
+	"Function":	"ap_fatal_signal_setup",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	865,
+		"cl":	28,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_getword_conf2",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	2268,
+		"cl":	17,
+		"fl":	"util_expr_scan.c"
+	},
+	"Function":	"ap_expr_yy_scan_bytes",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1513,
+		"cl":	32,
+		"fl":	"http_protocol.c"
+	},
+	"Function":	"ap_send_error_response",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	758,
+		"cl":	9,
+		"fl":	"event.c"
+	},
+	"Function":	"set_signals",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	58,
+		"cl":	36,
+		"fl":	"util_regex.c"
+	},
+	"Function":	"ap_rxplus_compile",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	2500,
+		"cl":	9,
+		"fl":	"util_expr_scan.c"
+	},
+	"Function":	"ap_expr_yylex_init",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1778,
+		"cl":	18,
+		"fl":	"util.c"
+	},
+	"Function":	"unescape_url",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	835,
+		"cl":	12,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_getword_conf2",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	764,
+		"cl":	9,
+		"fl":	"event.c"
+	},
+	"Function":	"set_signals",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	129,
+		"cl":	18,
+		"fl":	"util_script.c"
+	},
+	"Function":	"ap_create_environment",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	2426,
+		"cl":	9,
+		"fl":	"event.c"
+	},
+	"Function":	"make_child",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	363,
+		"cl":	22,
+		"fl":	"util_script.c"
+	},
+	"Function":	"original_uri",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	622,
+		"cl":	32,
+		"fl":	"util_script.c"
+	},
+	"Function":	"ap_scan_script_header_err_core_ex",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	265,
+		"cl":	28,
+		"fl":	"unixd.c"
+	},
+	"Function":	"ap_unixd_set_proc_mutex_perms",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	161,
+		"cl":	20,
+		"fl":	"listen.c"
+	},
+	"Function":	"make_sock",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	198,
+		"cl":	20,
+		"fl":	"util_cookies.c"
+	},
+	"Function":	"extract_cookie_line",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	2483,
+		"cl":	9,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_timeout_parameter_parse",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	72,
+		"cl":	9,
+		"fl":	"unixd.c"
+	},
+	"Function":	"ap_unixd_set_rlimit",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	406,
+		"cl":	22,
+		"fl":	"mpm_common.c"
+	},
+	"Function":	"ap_mpm_set_thread_stacksize",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	367,
+		"cl":	29,
+		"fl":	"mpm_unix.c"
+	},
+	"Function":	"ap_mpm_safe_kill",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1016,
+		"cl":	9,
+		"fl":	"mpm_unix.c"
+	},
+	"Function":	"ap_fatal_signal_setup",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	446,
+		"cl":	25,
+		"fl":	"util.c"
+	},
+	"Function":	"regsub_core",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	2507,
+		"cl":	9,
+		"fl":	"util_expr_scan.c"
+	},
+	"Function":	"ap_expr_yylex_init",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	4014,
+		"cl":	20,
+		"fl":	"core.c"
+	},
+	"Function":	"parse_errorlog_item",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	811,
+		"cl":	28,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_getword_conf",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	2484,
+		"cl":	16,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_timeout_parameter_parse",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1514,
+		"cl":	32,
+		"fl":	"http_protocol.c"
+	},
+	"Function":	"ap_send_error_response",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	232,
+		"cl":	17,
+		"fl":	"mpm_common.c"
+	},
+	"Function":	"ap_uname2id",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	404,
+		"cl":	5,
+		"fl":	"mpm_common.c"
+	},
+	"Function":	"ap_mpm_set_thread_stacksize",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	3000,
+		"cl":	30,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_abort_on_oom",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	166,
+		"cl":	18,
+		"fl":	"http_filters.c"
+	},
+	"Function":	"parse_chunk_size",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	761,
+		"cl":	9,
+		"fl":	"mpm_unix.c"
+	},
+	"Function":	"send_signal",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	733,
+		"cl":	29,
+		"fl":	"http_filters.c"
+	},
+	"Function":	"uniq_field_values",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1778,
+		"cl":	45,
+		"fl":	"util.c"
+	},
+	"Function":	"unescape_url",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	719,
+		"cl":	27,
+		"fl":	"vhost.c"
+	},
+	"Function":	"fix_hostname",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	409,
+		"cl":	25,
+		"fl":	"util.c"
+	},
+	"Function":	"regsub_core",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	384,
+		"cl":	5,
+		"fl":	"mpm_common.c"
+	},
+	"Function":	"ap_mpm_set_max_mem_free",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	2249,
+		"cl":	16,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_is_url",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	114,
+		"cl":	35,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_field_noparam",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1031,
+		"cl":	9,
+		"fl":	"mpm_unix.c"
+	},
+	"Function":	"ap_fatal_signal_setup",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	817,
+		"cl":	12,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_getword_conf",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1408,
+		"cl":	13,
+		"fl":	"log.c"
+	},
+	"Function":	"fmt_data",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	734,
+		"cl":	9,
+		"fl":	"event.c"
+	},
+	"Function":	"set_signals",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	224,
+		"cl":	13,
+		"fl":	"util_filter.c"
+	},
+	"Function":	"register_filter",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	2052,
+		"cl":	15,
+		"fl":	"util_expr_scan.c"
+	},
+	"Function":	"ap_expr_yy_init_buffer",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	738,
+		"cl":	9,
+		"fl":	"event.c"
+	},
+	"Function":	"set_signals",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1689,
+		"cl":	24,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_find_last_token",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	2560,
+		"cl":	19,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_str2_alnum",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	749,
+		"cl":	9,
+		"fl":	"event.c"
+	},
+	"Function":	"set_signals",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	250,
+		"cl":	17,
+		"fl":	"mpm_common.c"
+	},
+	"Function":	"ap_gname2id",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	866,
+		"cl":	31,
+		"fl":	"http_filters.c"
+	},
+	"Function":	"validate_status_line",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	740,
+		"cl":	44,
+		"fl":	"http_filters.c"
+	},
+	"Function":	"uniq_field_values",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	785,
+		"cl":	12,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_getword_conf",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	2110,
+		"cl":	37,
+		"fl":	"event.c"
+	},
+	"Function":	"start_threads",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	519,
+		"cl":	9,
+		"fl":	"log.c"
+	},
+	"Function":	"ap_open_logs",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	1632,
+		"cl":	12,
+		"fl":	"util.c"
+	},
+	"Function":	"ap_get_token",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	777,
+		"cl":	9,
+		"fl":	"event.c"
+	},
+	"Function":	"set_signals",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	356,
+		"cl":	16,
+		"fl":	"mpm_unix.c"
+	},
+	"Function":	"ap_mpm_safe_kill",
+	"Description":	{
+	},
+	"Events":	[]
+},
+{
+	"DefectType":	"Never Free",
+	"Location":	{
+		"ln":	53,
+		"cl":	36,
+		"fl":	"util_regex.c"
+	},
+	"Function":	"ap_rxplus_compile",
+	"Description":	{
+	},
+	"Events":	[]
+}]
