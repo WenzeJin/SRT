@@ -33,4 +33,4 @@
 
 SRT在运行会输出类似下图的日志。
 
-![截屏2024-01-17 23.16.29](/Users/jinwenze/Coding/SVF/SRT/README.assets/截屏2024-01-17 23.16.29.png)
+![截屏2024-01-17 23.16.29](README.assets/截屏2024-01-17 23.16.29.png)
