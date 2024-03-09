@@ -16,14 +16,14 @@ import pathlib
 import argparse
 import re
 
-C_VAR_NAME = re.compile('[_a-zA-Z]+[_a-zA-Z0-9]*')
+C_VAR_NAME = re.compile('[_a-zA-Z]+[_a-zA-Z0-9.\\[\\]]*')
 
-C_CPP_KEYWORDS = {'auto', 'break', 'case', 'char', 'const',
+C_CPP_KEYWORDS = {'auto', 'break', 'case', 'catch', 'char', 'const',
                   'continue', 'default', 'do', 'double', 'else',
                   'enum', 'extern', 'float', 'for', 'goto', 'if',
                   'int', 'long', 'register', 'return', 'short',
-                  'signed', 'sizeof', 'static', 'struct', 'switch',
-                  'typedef', 'union', 'unsigned', 'void', 'volatile', 'while'}
+                  'signed', 'sizeof', 'static', 'struct', 'switch', 'try',
+                  'typedef', 'union', 'unsigned', 'void', 'volatile', 'while', 'when'}
 class SVFTag:
     # vanilla tags
     class DefectType:
@@ -31,7 +31,6 @@ class SVFTag:
         DF = "Double Free"
         UAF = "Use After Free"
         PL = "Partial Leak"
-
 
     DT = "DefectType"
     Loc = "Location"
@@ -91,11 +90,11 @@ def deal_duplicate(ln:int, co:int, files:list[pathlib.Path], func_name:str="") -
                     continue
             res.append(file)
     if len(res) > 1:
-        return (1, None)
+        return 1, None
     elif len(res) == 1:
-        return (0, res[0])
+        return 0, res[0]
     else:
-        return (-1, None)
+        return -1, None
 
 def are_all_letters_uppercase(s:str):
     letters = [char for char in s if char.isalpha()]
@@ -143,7 +142,7 @@ if __name__ == '__main__':
                         default='./',
                         help='Set the root directory of the source code.')
     parser.add_argument('--copy_range', type=int,
-                        default=1,
+                        default=5,
                         help='Set the range of lines that will be copied around the line of warning.')
     parser.add_argument('--cap_not_name', type=bool,
                         default=True,
@@ -261,3 +260,4 @@ if __name__ == '__main__':
         with open(args.output_file, 'w') as outf:
             json.dump(report, outf, indent=4)
             SRT_log(True, "Successfully dumped JSON output: " + str(args.output_file))
+
